@@ -10,7 +10,9 @@
 .navName {
     display: inline-block;
 }
-
+.resume a{
+    text-decoration: none;
+}
 .head {
     flex-wrap: wrap;
     height: 90vh;
