@@ -1,0 +1,327 @@
+#navbar {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+
+}
+
+.navName {
+    display: inline-block;
+}
+
+.head {
+    flex-wrap: wrap;
+    height: 90vh;
+}
+
+.photo {
+    width: 39%;
+    display: inline-block;
+
+}
+
+.photo #profile_pic {
+    display: inline;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgb(136, 105, 105);
+}
+
+.name {
+    display: flex;
+    height: 80px;
+
+}
+
+.name h2 {
+    margin: auto;
+}
+
+
+.bio_table tr td {
+    padding-right: 15px;
+}
+
+
+
+@media only screen and (min-width: 991px) {
+
+    #navbar {
+        margin-bottom: 40px;
+
+    }
+
+    .navName p {
+        height: 100%;
+        margin: auto;
+    }
+
+    .container-fluid {
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        margin: 0 20px;
+    }
+
+    .bar_logo {
+        visibility: hidden;
+
+    }
+
+    .profile_container {
+        padding: 20px;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .profile_container {
+        margin: auto;
+        border: 1px solid rgb(58, 45, 45);
+        min-height: 100vh;
+        max-height: fit-content;
+        width: 100%;
+    }
+
+    .resume {
+        height: 40px;
+        width: 200px;
+        margin: 400px 100px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(41, 35, 35);
+        border-radius: 5%;
+        background-color: black;
+    }
+
+    .resume i {
+        margin-left: 20px;
+    }
+
+    .head {
+        height: 170px;
+    }
+
+    .photo_bg {
+        display: flex;
+        height: 90vh;
+        width: 100%;
+        background-image: url('image/bg.JPG');
+        background-size: cover;
+        /* Adjust to your preference */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .pp .photo_bg p {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        color: black;
+        font-weight: bolder;
+        margin: 100px 200px;
+    }
+
+    .description {
+        display: inline-block;
+        width: 60%;
+        height: auto;
+        padding: 20px 30px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .description p {
+        text-indent: 80px;
+    }
+
+
+    #carouselExampleIndicators {
+        display: flex;
+        height: 40%;
+    }
+
+    .custom-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        /* Ensures the caption takes the full height of the parent carousel item. */
+    }
+
+
+
+
+    /* footer */
+    .card {
+        margin-top: 40px;
+    }
+
+    .social_media {
+        height: 80px;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .social_media a i {
+        padding: 0 30px;
+        font-size: 50px;
+    }
+
+    /*projects.php*/
+    .project {
+        min-height: 100vh;
+        padding: 50px 50px;
+    }
+
+    .projectCard {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    #navbar {
+        display: flex;
+    }
+
+    .bar_logo {
+        display: inline-block;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+
+    .profile_container {
+        margin: auto;
+        min-height: 100vh;
+
+    }
+
+    .profile_container {
+
+        overflow: hidden;
+        min-height: 100vh;
+    }
+
+    .photo_bg {
+        display: flex;
+        height: 50vh;
+        width: 440px;
+        flex-wrap: wrap;
+        background-image: url('image/bg.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .photo_bg p {
+
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+        color: black;
+        font-weight: bolder;
+        margin: auto;
+    }
+
+    .resume {
+        margin: auto;
+
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid rgb(41, 35, 35);
+        border-radius: 5%;
+        background-color: black;
+    }
+
+    .resume i {
+        margin-left: 20px;
+    }
+
+    .photo {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+    }
+
+    .pp {
+        display: block;
+        width: 1500px;
+        height: 50vh;
+    }
+
+    #profile_pic {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+        border-radius: 50%;
+        border: 2px solid rgb(94, 81, 81);
+        box-shadow: 1px 1px 3px;
+    }
+
+
+
+    .description {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .description p {
+        text-indent: 30px;
+    }
+
+
+
+
+
+    .social_media {
+        text-align: center;
+    }
+
+    .social_media a i {
+        font-size: 30px;
+        margin: 10px 25px;
+    }
+
+    /*projects.php*/
+    .project {
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        padding: 5px 5px;
+    }
+
+    .projectCard {
+        display: inline;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        text-align: center;
+        margin: 40px auto;
+
+    }
+
+}
