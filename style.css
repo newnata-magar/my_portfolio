@@ -6,13 +6,25 @@
     top: 0;
 
 }
+#mode{
+    padding-right: 2vw;
+}
+.navName{
+    display:flex ;
+}
+.navName p{
+    display: inline-block;
+}
+.navName img{ 
+    height: 24px;
+    width: auto;
+    display: inline-block;
+}
 
 .navName {
     display: inline-block;
 }
-.resume a{
-    text-decoration: none;
-}
+
 .head {
     flex-wrap: wrap;
     height: 90vh;
@@ -24,13 +36,7 @@
 
 }
 
-.photo #profile_pic {
-    display: inline;
-    height: 400px;
-    width: 400px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 6px rgb(136, 105, 105);
-}
+
 
 .name {
     display: flex;
@@ -55,7 +61,37 @@
         margin-bottom: 40px;
 
     }
+    .nav-item {
+        position: relative;
+    }
+    .nav-item:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: aqua;
+        transition: 0.2;
+        border-radius: 25%;
+        transform: scaleX(0);
+    }
+    .nav-item:hover:before{
+        transform: scaleX(1);
 
+    }
+    .navlogo_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navlogo_container i{
+        font-size: 24px;
+    }
+    .bar_logo{
+        display: inline-block;
+    }
     .navName p {
         height: 100%;
         margin: auto;
@@ -79,7 +115,13 @@
         overflow: hidden;
         min-height: 100vh;
     }
-
+    .photo #profile_pic {
+        display: inline;
+        height: 400px;
+        width: 400px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 6px rgb(136, 105, 105);
+    }
     .form-check-label {
         font-size: 14px;
         width: 100px;
@@ -107,6 +149,9 @@
     .resume i {
         margin-left: 20px;
     }
+    .resume a{
+        text-decoration: none;
+    }
 
     .head {
         height: 170px;
@@ -116,7 +161,7 @@
         display: flex;
         height: 90vh;
         width: 100%;
-        background-image: url('image/bg.JPG');
+        background-image: url('image/Bg.jpeg');
         background-size: cover;
         /* Adjust to your preference */
         background-repeat: no-repeat;
@@ -129,7 +174,7 @@
         font-size: 40px;
         color: black;
         font-weight: bolder;
-        margin: 100px 200px;
+        margin: 240px 115px 200px;
     }
 
     .description {
@@ -199,9 +244,13 @@
     #navbar {
         display: flex;
     }
-
-    .bar_logo {
+    #mode{
         display: inline-block;
+    }
+    .bar_logo {
+        display: inline-flex;
+        justify-content: space-between;
+       
         padding: 10px;
         font-size: 20px;
 
@@ -225,7 +274,7 @@
         height: 50vh;
         width: 440px;
         flex-wrap: wrap;
-        background-image: url('image/bg.JPG');
+        background-image: url('image/Bg.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -242,7 +291,6 @@
 
     .resume {
         margin: auto;
-
         height: 40px;
         width: 200px;
         text-align: center;
@@ -250,14 +298,18 @@
         border: 1px solid rgb(41, 35, 35);
         border-radius: 5%;
         background-color: black;
+        overflow: hidden;
     }
 
     .resume i {
         margin-left: 20px;
     }
-
+    .resume a {
+       text-decoration:none;
+    }
     .photo {
         margin-top: 30px;
+        padding: 0 30px;
         width: 100%;
         display: flex;
     }
@@ -272,7 +324,6 @@
         width: 100%;
         height: 100%;
         margin: auto;
-
         border-radius: 50%;
         border: 2px solid rgb(94, 81, 81);
         box-shadow: 1px 1px 3px;
@@ -305,6 +356,7 @@
         font-size: 30px;
         margin: 10px 25px;
     }
+
 
     /*projects.php*/
     .project {
